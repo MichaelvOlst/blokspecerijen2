@@ -1,0 +1,20 @@
+nav.main-nav{
+	position: absolute;
+	right: 0;
+	top: -70px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li{
+			display: inline;
+			margin-left: 20px;
+
+			a{
+				font-size: 1.3em;
+				color: $white;
+			}
+		}
+	}
+}
