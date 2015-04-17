@@ -1,7 +1,8 @@
 nav.main-nav{
 	position: absolute;
 	right: 0;
-	top: -70px;
+	top: 16px;
+	
 
 	ul {
 		margin: 0;
@@ -12,8 +13,9 @@ nav.main-nav{
 			margin-left: 20px;
 
 			a{
-				font-size: 1.3em;
-				color: $white;
+				font-size: 1em;
+				color: white;
+				text-transform: uppercase;
 			}
 		}
 	}

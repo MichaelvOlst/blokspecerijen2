@@ -4,14 +4,20 @@
 
 //import modules
 @import "modules/colors";
+@import "modules/importFonts";
 
 //partials
 @import "partials/header";
 @import "partials/nav";
+@import "partials/home";
+@import "partials/footer";
+@import "partials/aside-categories";
 
 
 body{
 	background: $white;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
 }
 
 a{
@@ -25,4 +31,15 @@ li{
 .container{
 	@include outer-container;
 	position:relative;
+	margin-top: 1%;
+}
+
+.left-section{
+	@include span-columns(3);
+	@include omega();
+}
+
+.right-section{
+	@include span-columns(9);
+	@include omega();
 }

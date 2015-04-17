@@ -1,0 +1,51 @@
+footer{
+	min-height: 300px; // for the moment
+	background-color: #eee; // for the moment
+	width: 100%;
+
+	.container{
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+	#footer-nav{
+		@include span-columns(4);
+		@include omega();
+		ul{
+
+			padding: 0;
+
+			li{
+				padding: 3px 0;
+
+				a{
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+
+	#footer-contact{
+		@include span-columns(4);
+		@include omega();
+	}
+
+	#footer-map{
+		@include span-columns(4);
+		@include omega();
+	}
+
+	#copyright{
+		.container{
+			padding: 0;
+
+		}
+		width: 100%;
+		display: block;
+		background-color: $blue;
+		min-height: 50px;
+		padding: 1%;
+	}
+
+
+}
