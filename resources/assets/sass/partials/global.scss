@@ -1,0 +1,48 @@
+body{
+	background: $white;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+.container{
+	@include outer-container;
+	position:relative;
+	margin-top: 1%;
+}
+
+.left-section{
+	@include span-columns(3);
+	@include omega();
+}
+
+.right-section{
+	@include span-columns(9);
+	@include omega();
+}
+
+h1.header{
+	
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin-bottom: 5%;
+
+	&:after{
+		content: " ";
+		position: absolute;
+		border-bottom: 3px solid red;
+		text-align: center;
+		top: 45px;
+		left: 48%;
+		width: 5%;
+	}
+	
+}

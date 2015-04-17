@@ -13,10 +13,21 @@ nav.main-nav{
 			margin-left: 20px;
 
 			a{
-				font-size: 1em;
+				font-size: 1.3em;
 				color: white;
-				text-transform: uppercase;
+				@include transition(all .3s $ease-out-quad);
+				
+				&:hover, &:focus{
+					color: shade($grey, 20%);
+				}
+				
 			}
+
+			.active {
+					color: $red;
+				}
+
+
 		}
 	}
 }
