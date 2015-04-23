@@ -1,6 +1,8 @@
+
+<body>
 <header>
 	<div class="container">
-		<h1 class="logo">Blokspecerijen</h1>
+		<h1 class="logo">Blok's Specerijen</h1>
 		<select name="" id="" class="language">
 			<option value="Nederlands" selected>Nederlands</option>
 			<option value="Duits">Duits</option>

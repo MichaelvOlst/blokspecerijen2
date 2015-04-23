@@ -4,12 +4,9 @@
 	<title>Blokspecerijen</title>
 	{!! Html::style('css/app.css') !!}
 </head>
-<body>
 	
-	@include('layouts.header')
-	
-	@yield('content')
+@include('layouts.header')
 
-		
+@yield('content')
 
-		@include('layouts.footer')
+@include('layouts.footer')

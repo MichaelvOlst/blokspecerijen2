@@ -1,0 +1,59 @@
+.assortment{
+
+	margin: 10% 0;
+
+	.left-section{
+
+		.nav-category{
+
+			padding-top: 8%;
+
+			ul {
+				li{
+
+					margin-bottom: 15px;
+					a{
+						color: $black;
+						font-size: 1.3em;
+
+						@include transition(all .3s $ease-out-quad);
+
+						&:focus, &:hover{
+							color: $red;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	.right-section{
+		.tiles{
+
+			li{
+				
+				float: left;
+				width: calc(33.3% - 40px);
+				display: block;
+				margin: 20px;
+				@include border-radius(5px);
+				border: 1px solid darken($grey, 30%);
+				border-bottom: none;
+
+				a {
+					h3{ 
+						color: $black;
+						font-weight: 400;
+						text-align: center;
+					}
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -5,6 +5,7 @@
 //import modules
 @import "modules/colors";
 @import "modules/importFonts";
+@import "modules/mixin";
 
 //partials
 @import "partials/global";
@@ -12,6 +13,6 @@
 @import "partials/nav";
 @import "partials/home";
 @import "partials/footer";
-@import "partials/aside-categories";
+@import "partials/assortment";
 
 
