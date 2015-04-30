@@ -24,6 +24,22 @@
 					}
 				}
 			}
+			.nav-category-children{
+				padding: 0 0 0 5%;
+				li{
+					margin-bottom: 5px;
+
+					&:first-child{
+							margin-top: 10px;
+						}
+					a{
+						font-size: 1.1em;
+						color: lighten($black, 30%);
+					}
+				}
+			}
+
+
 		}
 
 	}
@@ -32,7 +48,7 @@
 		.tiles{
 
 			li{
-				
+				@include transition(all .3s $ease-out-quad);
 				float: left;
 				width: calc(33.3% - 40px);
 				display: block;
@@ -41,7 +57,13 @@
 				border: 1px solid darken($grey, 30%);
 				border-bottom: none;
 
+				&:hover a img{
+					opacity: 0.7
+				}
+
 				a {
+					
+
 					h3{ 
 						color: $black;
 						font-weight: 400;
@@ -49,8 +71,11 @@
 					}
 
 					img {
+						@include transition(all .3s $ease-out-quad);
 						width: 100%;
 					}
+
+					
 				}
 			}
 		}
